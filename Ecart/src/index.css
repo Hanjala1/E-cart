@@ -1,0 +1,117 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #270858;
+  --secondary-color: #4b1b78;
+  --hover-color: lightblue;
+  --background-color: black; /* Updated background color */
+  --container-background-color: beige;
+  --font-color: white;
+}
+
+/* App Styles */
+.App {
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.nav-bar, .nav-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--font-color);
+}
+
+.nav-bar {
+  background-color: var(--primary-color);
+  padding: 11px;
+}
+
+.nav-bar-wrapper {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  font-weight: bold;
+}
+
+/* Brand and Cart Styles */
+.brand, .cart {
+  font-weight: bolder;
+  width: 21%;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--font-color);
+  transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.brand:hover, .cart:hover {
+  color: var(--hover-color);
+}
+
+/* Search Bar Styles */
+.search-bar {
+  width: 60%;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 11px;
+  font-weight: bold;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.search-bar input:hover {
+  border-color: var(--hover-color); /* Change border color on hover */
+}
+
+input::placeholder {
+  font-weight: bold;
+}
+
+/* Container Styles */
+.container {
+  background-color: var(--container-background-color);
+  padding: 20px;
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.container:hover {
+  background-color: var(--hover-color); /* Change background color on hover */
+}
+
+/* Image Styles */
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+  width: 350px;
+  height: 350px;
+  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.img:hover img {
+  transform: scale(1.1); /* Scale up image on hover */
+}
+
+/* Content Styles */
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
